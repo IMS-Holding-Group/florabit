@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from app import init_db, get_db  # noqa: E402
 
 ADMIN_EMAIL = 'admin@florabit.local'
-ADMIN_PASSWORD = 'FlorabitAdmin2026'
+ADMIN_PASSWORD = ''
 ADMIN_NAME = 'مسؤول النظام'
 
 

@@ -112,7 +112,7 @@ def _care_streak_days(conn, user_id):
 
 
 app = Flask(__name__, static_folder='.')
-app.secret_key = os.environ.get('FLORABIT_SECRET_KEY', 'florabit-dev-change-in-production')
+app.secret_key = os.environ.get('FLORABIT_SECRET_KEY', '')
 app.config['SESSION_COOKIE_HTTPONLY'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 if os.environ.get('RENDER') or os.environ.get('FLORABIT_SECURE_COOKIES', '').lower() in (
